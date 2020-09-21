@@ -12,7 +12,6 @@ data1= {"detect_new_text":0,
 abc = requests.post("https://www.translate.com/translator/ajax_lang_auto_detect",data=data1).json()
 
 lang = abc["language"]
-
 url = "https://www.translate.com/translator/ajax_translate"
 
 if lang == "tr":
